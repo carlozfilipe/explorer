@@ -1,54 +1,75 @@
 body {
-  font-family: "Open Sans", sans-serif;
-  text-align: center;
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
-#hero {
-  width: 592px;
-  margin: 0 auto 72px;
+:root {
+  --primary-color: #828282;
+  --title-color: #3F3D56;
+  --span-color: #EE24FF;
+  --line-color: #ECEFF2;
 }
 
-#hero img {
-  margin-bottom: 72px;
+#container {
+  width: 626px;
+  margin: 64px auto 64px;
+  color: var(--primary-color);
 }
 
-h1 {
-  font-family: "Inter", sans-serif;
-  font-size: 49px;
-  line-height: 56px;
-  font-weight: normal;
+#container img {
   margin-bottom: 32px;
 }
 
-h1 span {
+#container h1 {
+  font-family: 'Dosis', sans-serif;
+  font-weight: normal;
+  color: var(--title-color);
+  margin: 16px 0;
+}
+
+#container h1 span {
+  color: var(--span-color);
   font-weight: bold;
 }
 
-span, a {
-  color: #ff9900;
+#container p + p {
+  margin: 32px 0 64px;
 }
 
-p, #footer {
-  color: #7d7987;
-  font-size: 14px;
-  line-height: 28px;
+#container p span {
+  color: var(--title-color);
+  font-weight: bold;
+}
+
+#links {
+  margin: 0 auto 40px;
+}
+
+#footer {
+  width: 100%;
+}
+
+#footer .line {
+  width: 391px;
+  height: 0;
+  margin: 0 auto 16px;
+  border: 1px solid var(--line-color);
+}
+
+#footer #links a {
+  text-decoration: none;
+  color: var(--title-color);
+  font-weight: bold;
 }
 
 #footer a + a {
-    margin-left: 28px;
+  margin-left: 28px;
 }
 
-.line {
-    width: 568px;
-    height: 0;
-    margin: 0 auto 8px;
-    border: 1px solid #ECEFF2;
-}
-
-#balls {
-    position: fixed;
-    bottom: 0;
-    right: 0;
+#wave {
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
 }
