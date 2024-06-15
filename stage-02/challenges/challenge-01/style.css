@@ -1,75 +1,57 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
   margin: 0;
   padding: 0;
-  text-align: center;
+  box-sizing: border-box;
 }
 
-:root {
-  --primary-color: #828282;
-  --title-color: #3F3D56;
-  --span-color: #EE24FF;
-  --line-color: #ECEFF2;
+#hero {
+  width: 592px;
+  margin: 0 auto 72px;
 }
 
-#container {
-  width: 626px;
-  margin: 64px auto 64px;
-  color: var(--primary-color);
+#hero img {
+  margin-bottom: 72px;
 }
 
-#container img {
-  margin-bottom: 32px;
-}
-
-#container h1 {
-  font-family: 'Dosis', sans-serif;
+h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 49px;
+  line-height: 56px;
   font-weight: normal;
-  color: var(--title-color);
-  margin: 16px 0;
+  margin: 0 0 32px 0;
 }
 
-#container h1 span {
-  color: var(--span-color);
+h1 span {
   font-weight: bold;
 }
 
-#container p + p {
-  margin: 32px 0 64px;
+span,
+a {
+  color: #ff9900;
 }
 
-#container p span {
-  color: var(--title-color);
-  font-weight: bold;
-}
-
-#links {
-  margin: 0 auto 40px;
-}
-
+p,
 #footer {
-  width: 100%;
+  color: #7d7987;
+  font-size: 14px;
+  line-height: 28px;
 }
 
 #footer .line {
-  width: 391px;
-  height: 0;
-  margin: 0 auto 16px;
-  border: 1px solid var(--line-color);
-}
-
-#footer #links a {
-  text-decoration: none;
-  color: var(--title-color);
-  font-weight: bold;
+  width: 568px;
+  height: 0;;
+  margin: 0 auto 8px;
+  border: 1px solid #ECEFF2;
 }
 
 #footer a + a {
   margin-left: 28px;
 }
 
-#wave {
+#balls {
   position: fixed;
-  width: 100%;
-  bottom: 0px;
+  bottom: 0;
+  right: 0;
 }
